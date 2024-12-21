@@ -45,5 +45,17 @@ library(tidyverse)
 
 # IntroCourse_6 -----------------------------------------------------------
 
-#This will be used for testing out Git. %>% %>%
+#This will be used for testing out Git
+
+#checking if you have a token, and creating one
+usethis::gh_token_help()
+usethis::create_github_token()
+#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
+
+#function to add your token
+gitcreds::gitcreds_set()
+private=TRUE
+
+#this function makes a public repository
+usethis::use_github()
 
